@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AAROM Aluminum & Construction Company</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
+  <style>
+    :root { --black: #0a0a0a; --gold: #D4AF37; --orange: #FF5722; }
+    * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Poppins', sans-serif; }
+    body { background: #f5f5f5; padding-top: 80px; }
+    
+    /* HEADER - LOGO LEFT, MENU RIGHT */
+    header { background: rgba(10,10,10,0.95); padding: 15px 5%; display: flex; justify-content: space-between; align-items: center; position: fixed; top: 0; width: 100%; z-index: 1000; border-bottom: 2px solid var(--gold); }
+    .logo { display: flex; align-items: center; gap: 12px; }
+    .logo img { height: 50px; border-radius: 6px; }
+    .logo h1 { color: var(--gold); font-size: 1.4rem; font-weight: 800; }
+    
+    nav { display: flex; }
+    nav a { color: white; text-decoration: none; margin: 0 15px; font-weight: 600; }
+    nav a:hover, nav a.active { color: var(--gold); }
+
+    /* HAMBURGER BUTTON - ON THE RIGHT */
+    .menu-toggle { display: none; flex-direction: column; cursor: pointer; }
+    .menu-toggle span { background: var(--gold); height: 3px; width: 28px; margin: 5px 0; transition: 0.3s; border-radius: 2px; }
+
+    .hero { height: 90vh; background: linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.65)), url('https://images.unsplash.com/photo-1503387762-592deb58ef4e?q=80') center/cover; display: flex; align-items: center; justify-content: center; text-align: center; color: white; padding: 20px; }
+    .hero h1 { font-size: 3rem; color: var(--gold); }
+    .btn { background: var(--orange); color: white; padding: 16px 40px; border-radius: 8px; text-decoration: none; font-weight: 700; margin-top: 20px; display: inline-block; }
+
+    section { padding: 80px 5%; }
+    .section-title { text-align: center; font-size: 2.5rem; font-weight: 800; margin-bottom: 50px; }
+    .services { background: var(--black); color: white; }
+    .service-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 30px; max-width: 1200px; margin: auto; }
+    .service-card { background: #1a1a1a; padding: 35px 25px; border-radius: 10px; text-align: center; border-top: 4px solid var(--gold); }
+    
+    .why { background: #f9f9f9; }
+    .why-item { background: white; padding: 25px; margin: 20px auto; border-radius: 10px; display: flex; gap: 20px; max-width: 900px; border-left: 4px solid var(--orange); }
+    .why-number { background: var(--orange); color: white; font-size: 2rem; font-weight: 800; width: 60px; height: 60px; display: flex; align-items: center; justify-content: center; border-radius: 50%; }
+    
+    footer { background: #000; color: #888; text-align: center; padding: 25px; }
+
+    /* MOBILE MENU DROPDOWN FROM RIGHT */
+    @media(max-width: 768px) {
+      .menu-toggle { display: flex; }
+      nav { 
+        position: absolute; top: 80px; right: 0; width: 70%; 
+        background: var(--black); flex-direction: column; 
+        display: none; padding: 30px 0; text-align: center;
+        border-left: 2px solid var(--gold);
+        box-shadow: -5px 5px 20px rgba(0,0,0,0.5);
+      }
+      nav.active { display: flex; }
+      nav a { margin: 15px 0; font-size: 1.2rem; }
+      .hero h1 { font-size: 2.2rem; }
+      .why-item { flex-direction: column; text-align: center; }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <!-- LOGO ON LEFT -->
+  <div class="logo">
+    <img src="logo.png" alt="AAROM Logo">
+    <h1>AAROM ALUMINUM</h1>
+  </div>
+  
+  <!-- MENU ON RIGHT -->
+  <nav id="navbar">
+    <a href="index.html" class="active">HOME</a>
+    <a href="products.html">PRODUCTS</a>
+    <a href="address.html">ADDRESS</a>
+    <a href="contact.html">CONTACT</a>
+  </nav>
+
+  <!-- HAMBURGER BUTTON ON RIGHT -->
+  <div class="menu-toggle" onclick="toggleMenu()">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</header>
+
+<section class="hero">
+  <div>
+    <h1>AAROM</h1>
+    <h2>ALUMINUM & CONSTRUCTION COMPANY</h2>
+    <p>STANDARD ALUMINUM FABRICATORS</p>
+    <a href="contact.html" class="btn">GET A FREE QUOTE</a>
+  </div>
+</section>
+
+<section class="services">
+  <h2 class="section-title" style="color:var(--gold)">OUR SERVICES</h2>
+  <div class="service-grid">
+    <div class="service-card"><h3>Aluminum Windows</h3><p>Sliding, Casement and Fixed windows.</p></div>
+    <div class="service-card"><h3>Aluminum Doors</h3><p>Shop Front and Office doors with glass.</p></div>
+    <div class="service-card"><h3>Display Shelves</h3><p>Custom Kiosks for shops and malls.</p></div>
+    <div class="service-card"><h3>Powder Coating</h3><p>Smooth and vibrant finish that lasts.</p></div>
+  </div>
+</section>
+
+<section class="why">
+  <h2 class="section-title">5 REASONS TO CHOOSE US</h2>
+  <div class="why-item"><div class="why-number">1</div><div><h3>High Grade Materials</h3><p>We use only high-grade aluminium for strength.</p></div></div>
+  <div class="why-item"><div class="why-number">2</div><div><h3>Expert Fabricators</h3><p>10+ years experience in professional installation.</p></div></div>
+  <div class="why-item"><div class="why-number">3</div><div><h3>Custom Designs</h3><p>Built to your exact specifications.</p></div></div>
+  <div class="why-item"><div class="why-number">4</div><div><h3>Water & Dust Proof</h3><p>Tested for Nigerian weather.</p></div></div>
+  <div class="why-item"><div class="why-number">5</div><div><h3>5 Year Warranty</h3><p>Full warranty and after-sales service.</p></div></div>
+</section>
+
+<footer>
+  <p>Copyright © 2026 AAROM Aluminum & Construction Company</p>
+</footer>
+
+<script>
+function toggleMenu() {
+  document.getElementById('navbar').classList.toggle('active');
+}
+</script>
+
+</body></html>
