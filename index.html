@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AAROM ALUMINIUM | Premium Aluminium Doors, Windows & Curtain Walls in Ojo, Lagos</title>
+<meta name="description" content="AAROM Aluminium Construction Company Ojo, Lagos. Visit us at No.23 Igboelerin Rd. Call +234 803 353 7487 for Aluminium Doors, Windows, Curtain Walls.">
+<style>
+  :root {
+    --black: #0A0A0A;
+    --gold: #D4AF37;
+    --dark-gold: #B8941F;
+    --white: #FFFFFF;
+    --light-bg: #F5F5F5;
+  }
+  *{margin:0;padding:0;box-sizing:border-box;font-family:'Poppins', sans-serif; scroll-behavior: smooth;}
+  body{color:#222;line-height:1.7;background:var(--white);}
+  .container{width:90%;max-width:1300px;margin:auto;}
+  
+  /* HEADER */
+  header{background:var(--black);padding:20px 0;position:fixed;width:100%;top:0;z-index:1000;border-bottom:3px solid var(--gold);}
+  nav{display:flex;justify-content:space-between;align-items:center;color:var(--white);}
+  .logo{font-size:26px;font-weight:900;color:var(--white);letter-spacing:2px;}
+  .logo span{color:var(--gold);}
+  nav ul{list-style:none;display:flex;gap:35px;align-items:center;}
+  nav ul li a{color:var(--white);text-decoration:none;font-weight:700;text-transform:uppercase;font-size:14px;letter-spacing:1.5px;transition:0.3s;}
+  nav ul li a:hover{color:var(--gold);}
+  .nav-btn{background:var(--gold);color:var(--black);padding:10px 25px;border-radius:5px;text-decoration:none;font-weight:900;text-transform:uppercase;}
+  .nav-btn:hover{background:var(--dark-gold);}
+
+  /* HERO */
+  .hero{height:100vh;background:linear-gradient(rgba(10,10,10,0.85), rgba(212,175,55,0.3)), url('YOUR-HERO-IMAGE.jpg') center/cover fixed no-repeat;
+    color:var(--white);display:flex;align-items:center;text-align:left;padding-top:80px;}
+  .hero h1{font-size:60px;font-weight:900;margin-bottom:15px;letter-spacing:4px;text-transform:uppercase;}
+  .hero h2{font-size:24px;font-weight:400;margin-bottom:10px;color:var(--gold);}
+  .hero-address{font-size:16px;margin-bottom:30px;color:#ccc;}
+  .btn{background:var(--gold);color:var(--black);padding:16px 40px;border:none;text-decoration:none;font-weight:900;border-radius:5px;display:inline-block;text-transform:uppercase;letter-spacing:2px;transition:0.3s;cursor:pointer;}
+  .btn:hover{background:var(--dark-gold);transform:translateY(-3px);}
+
+  /* SECTIONS */
+  section{padding:100px 0;}
+  h2{text-align:center;font-size:42px;margin-bottom:60px;text-transform:uppercase;color:var(--black);font-weight:900;}
+  h2 span{color:var(--gold);}
+
+  /* OUR PRODUCTS */
+  #products{background:var(--white);}
+  .products-grid{display:grid;grid-template-columns:repeat(auto-fit, minmax(300px, 1fr));gap:30px;}
+  .product-card{background:var(--light-bg);border-radius:12px;overflow:hidden;transition:0.4s;border-bottom:4px solid var(--gold);}
+  .product-card img{width:100%;height:280px;object-fit:cover;background:#ddd;}
+  .product-info{padding:25px;text-align:center;}
+  .product-card h3{color:var(--black);margin-bottom:10px;font-size:22px;text-transform:uppercase;}
+  .product-card:hover{transform:translateY(-10px);box-shadow:0 15px 35px rgba(0,0,0,0.15);}
+
+  /* DISCOVER */
+  .discover{background:var(--black);color:var(--white);padding:100px 20px;}
+  .discover h2{color:var(--white);}
+  .discover-content{display:grid;grid-template-columns:1fr 1fr;gap:50px;align-items:center;}
+
+  /* CONTACT */
+  .contact{background:var(--light-bg);}
+  .contact-wrapper{display:grid;grid-template-columns:1fr 1fr;gap:50px;}
+  .contact-form{background:var(--white);padding:40px;border-radius:12px;border-top:5px solid var(--gold);}
+  .contact-form input, .contact-form textarea{width:100%;padding:15px;margin:12px 0;border:2px solid #ddd;border-radius:6px;font-size:16px;}
+  .contact-form input:focus{border-color:var(--gold);outline:none;}
+  .contact-info h3{color:var(--black);font-size:24px;margin-bottom:20px;}
+  .contact-info p{margin:15px 0;font-size:17px;}
+  .contact-info b{color:var(--gold);}
+  .phone-number{font-size:20px !important; font-weight:900; color:var(--black);}
+  .address-box{background:var(--white);padding:20px;border-left:4px solid var(--gold);margin-top:20px;border-radius:5px;}
+
+  /* MAP */
+  .map-container{margin-top:30px;border-radius:10px;overflow:hidden;border:3px solid var(--gold);}
+
+  /* WHATSAPP BUTTON */
+  .whatsapp-btn{position:fixed;bottom:20px;right:20px;background:#25D366;color:#fff;padding:15px 20px;border-radius:50px;text-decoration:none;font-weight:900;box-shadow:0 5px 15px rgba(0,0,0,0.3);z-index:999;}
+
+  /* FOOTER */
+  footer{background:var(--black);color:var(--white);padding:60px 0 20px;text-align:center;border-top:4px solid var(--gold);}
+  .footer-grid{display:grid;grid-template-columns:repeat(3, 1fr);gap:40px;text-align:left;margin-bottom:40px;}
+  .footer-grid h4{color:var(--gold);margin-bottom:20px;text-transform:uppercase;}
+  .footer-grid a{color:#ccc;text-decoration:none;display:block;margin:10px 0;}
+  .footer-grid a:hover{color:var(--gold);}
+  .copyright{border-top:1px solid #333;padding-top:20px;font-size:14px;color:#aaa;}
+
+  @media(max-width:900px){
+    .hero h1{font-size:40px;}
+    nav ul li:nth-child(1){display:none;}
+    .contact-wrapper, .footer-grid{grid-template-columns:1fr;}
+  }
+</style>
+</head>
+<body>
+
+<!-- HEADER -->
+<header>
+  <div class="container">
+    <nav>
+      <div class="logo">AAR<span>OM</span> ALUMINIUM</div>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#contact" class="nav-btn">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="hero" id="home">
+  <div class="container">
+    <h1>AAROM ALUMINIUM</h1>
+    <h2>CONSTRUCTION COMPANY</h2>
+    <p class="hero-address">📍 No.23, Igboelerin Rd, Opp. D Parliament Hotel, Igboelerin, Ojo, Lagos State</p>
+    <p style="font-size:20px;margin-bottom:30px;max-width:600px;">Premium Aluminium Doors, Windows, Curtain Walls & Glass Works<br>Serving All of Lagos State</p>
+    <a href="#products" class="btn">EXPLORE PRODUCTS</a>
+  </div>
+</section>
+
+<!-- OUR PRODUCTS -->
+<section id="products">
+  <div class="container">
+    <h2>OUR <span>PRODUCTS</span></h2>
+    <div class="products-grid">
+      <div class="product-card">
+        <img src="YOUR-PRODUCT-IMAGE-1.jpg" alt="AAROM Aluminium Door">
+        <div class="product-info">
+          <h3>ALUMINIUM DOORS</h3>
+          <p>Custom entrance doors, office doors, and security doors. Gold and Black finishing available.</p>
+        </div>
+      </div>
+      <div class="product-card">
+        <img src="YOUR-PRODUCT-IMAGE-2.jpg" alt="AAROM Aluminium Window">
+        <div class="product-info">
+          <h3>ALUMINIUM WINDOWS</h3>
+          <p>Sliding, Casement, and Tilt & Turn windows. Energy efficient for Lagos weather.</p>
+        </div>
+      </div>
+      <div class="product-card">
+        <img src="YOUR-PRODUCT-IMAGE-3.jpg" alt="AAROM Curtain Wall">
+        <div class="product-info">
+          <h3>CURTAIN WALLS</h3>
+          <p>Modern glass facade systems for commercial buildings and offices in Lagos.</p>
+        </div>
+      </div>
+      <div class="product-card">
+        <img src="YOUR-PRODUCT-IMAGE-4.jpg" alt="AAROM Glass Works">
+        <div class="product-info">
+          <h3>GLASS WORKS</h3>
+          <p>Frameless showers, glass railings, partitions and custom glass installations.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="contact" id="contact">
+  <div class="container">
+    <h2>VISIT OUR <span>OFFICE</span></h2>
+    <div class="contact-wrapper">
+      <div class="contact-form">
+        <h3 style="margin-bottom:20px;">Send Us A Message</h3>
+        <input type="text" placeholder="Your Full Name" required>
+        <input type="tel" placeholder="Your Phone Number" required>
+        <textarea rows="4" placeholder="Tell us about your project in Lagos..." required></textarea>
+        <button class="btn" type="submit">SEND REQUEST</button>
+      </div>
+      <div class="contact-info">
+        <h3>Contact Information</h3>
+        <p class="phone-number"><b>Phone 1:</b> +234 803 353 7487</p>
+        <p class="phone-number"><b>Phone 2:</b> +234 808 183 6811</p>
+        <p><b>Email:</b> info@aaromaluminium.com</p>
+        
+        <div class="address-box">
+          <p><b>📍 Office Address:</b></p>
+          <p>No.23, Igboelerin Rd,<br>
+          Opposite D Parliament Hotel,<br>
+          Igboelerin, Ojo,<br>
+          Lagos State, Nigeria</p>
+        </div>
+
+        <p style="margin-top:20px;"><b>Hours:</b> Mon - Sat: 8:00am - 6:00pm</p>
+
+        <!-- GOOGLE MAP -->
+        <div class="map-container">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3964.5!2d3.2!3d6.45!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNsKwMjcnMDAuMCJOIDPCsDEyJzAwLjAiRQ!5e0!3m2!1sen!2sng!4v0" width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+        <p style="font-size:14px;margin-top:10px;">Search: "D Parliament Hotel Igboelerin" on Google Maps</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WHATSAPP BUTTON -->
+<a href="https://wa.me/2348033537487" target="_blank" class="whatsapp-btn">Chat on WhatsApp</a>
+
+<!-- FOOTER -->
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <h4>AAROM ALUMINIUM</h4>
+        <p>Premium Aluminium Construction Company in Ojo, Lagos. Quality, Strength, and Elegance in Every Project.</p>
+        <p style="margin-top:15px;"><b>Visit Us:</b><br>No.23, Igboelerin Rd,<br>Opp. D Parliament Hotel,<br>Igboelerin, Ojo, Lagos</p>
+      </div>
+      <div>
+        <h4>OUR PRODUCTS</h4>
+        <a href="#products">Aluminium Doors</a>
+        <a href="#products">Aluminium Windows</a>
+        <a href="#products">Curtain Walls</a>
+        <a href="#products">Glass Works</a>
+      </div>
+      <div>
+        <h4>CONTACT US</h4>
+        <p>+234 803 353 7487</p>
+        <p>+234 808 183 6811</p>
+        <a href="#contact">Get Quote</a>
+      </div>
+    </div>
+    <div class="copyright">
+      Copyright © 2026 AAROM ALUMINIUM CONSTRUCTION COMPANY. No.23 Igboelerin Rd, Ojo, Lagos. All Rights Reserved.
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
